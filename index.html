@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <!-- CSP: nothing loads from outside this site. Adapted from brief 3.5/3.6 to allow this site's own CSS and images ('self'). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; form-action 'none'; base-uri 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AiRT Official · Gallery · Every build from the show, free to use</title>
+  <meta name="description" content="The AiRT Gallery: every build from AiRT Official, free to use. First artefacts arrive with episode 1 on Mon 23 Nov 2026.">
+  <meta name="theme-color" content="#020239">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Draft by the AiRT Builder bot, 20 Oct 2026. Not published. Static page: no JavaScript, no tracking, no external scripts, fonts or CDNs.
+       [CHECK] https://airtofficial.com/ is not confirmed live. See README.md.
+       YouTube: https://www.youtube.com/@airt-official (handle @airt-official, Al, 20 Oct 2026).
+       20 Oct 2026: Rebranded to AiRT Official. YouTube handle is @airt-official. -->
+  <div class="bars bars-left" aria-hidden="true"><span></span><span></span></div>
+  <div class="bars bars-right" aria-hidden="true"><span></span><span></span></div>
+
+  <header class="hero">
+    <img class="mark" src="assets/airt-mark.svg" alt="" width="120" height="120">
+    <h1>
+      <img class="wordmark" src="assets/airt-wordmark.svg" alt="AiRT" width="262" height="78">
+      <span class="show-name">Official</span>
+      <span class="show-name">Gallery</span>
+    </h1>
+    <p class="tagline">Every build from AiRT Official, free to use.</p>
+  </header>
+
+  <main>
+    <section class="artefacts" aria-labelledby="artefacts-heading">
+      <h2 id="artefacts-heading">Artefacts</h2>
+
+      <div class="list" role="table" aria-label="Artefacts" aria-describedby="coming-soon">
+        <div class="row row-head" role="row">
+          <span role="columnheader">ID</span>
+          <span role="columnheader">Episode</span>
+          <span role="columnheader">What it is</span>
+          <span role="columnheader">Link</span>
+        </div>
+
+        <!-- ============================================================
+             EXAMPLE ONLY, NOT VISIBLE. Copy this block above the
+             "coming soon" block for each new artefact, fill in the real
+             ID, episode, one-line description and folder link, then
+             delete the "coming soon" block once the first one is live.
+        <div class="row" role="row">
+          <span class="cell cell-id" role="cell" data-label="ID">A0001</span>
+          <span class="cell" role="cell" data-label="Episode">E001</span>
+          <span class="cell cell-desc" role="cell" data-label="What it is">One line on what the artefact does.</span>
+          <span class="cell" role="cell" data-label="Link"><a href="A0001/">Open A0001</a></span>
+        </div>
+             ============================================================ -->
+
+        <div class="row row-empty" role="row">
+          <p class="soon" id="coming-soon" role="cell">
+            <span class="soon-badge">Coming soon</span>
+            First artefacts arrive with episode 1 on Mon 23 Nov 2026.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="licence" aria-labelledby="licence-heading">
+      <h2 id="licence-heading">Free downloads</h2>
+      <p>Every artefact is a free download. Each video shows you how to build it yourself.</p>
+    </section>
+
+    <nav class="buttons" aria-label="More from AiRT">
+      <a class="button button-primary" href="https://www.youtube.com/@airt-official">Watch on YouTube <span class="handle">@airt-official</span></a>
+      <a class="button button-secondary" href="https://airtofficial.com/">airtofficial.com</a>
+      <p class="social">
+        <a href="https://www.facebook.com/airtofficial/" rel="noopener">Facebook</a>
+        <span class="social-sep" aria-hidden="true">·</span>
+        <a href="https://www.instagram.com/airt_official_page/" rel="noopener">Instagram<span class="social-handle">@airt_official_page</span></a>
+      </p>
+    </nav>
+  </main>
+
+  <footer class="sponsor">
+    <img class="sponsor-logo" src="assets/bizwithai-logo-A-split-face-on-dark.svg" alt="BizWithAi.ai" width="918" height="200">
+    <p>Proudly sponsored by BizWithAi.ai, your professional problem solving partner</p>
+  </footer>
+</body>
+</html>

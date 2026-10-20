@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>AiRT mark</title>
+  <defs>
+    <radialGradient id="m-disc" cx="70%" cy="28%" r="85%">
+      <stop offset="0" stop-color="#46437F"/>
+      <stop offset="0.55" stop-color="#292757"/>
+      <stop offset="1" stop-color="#1B1946"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="97" fill="url(#m-disc)"/>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#5A5794" stroke-opacity="0.55" stroke-width="2"/>
+  <g fill="#F1F4F5" class="mark-a">
+    <path d="M95 66 L104 70 L88 110 L79 110 Z"/>
+    <path d="M76 118 L85 118 L72 150 L58 150 Z"/>
+    <path d="M103 58 C112 86 128 120 146 148 L124 148 C100 128 90 96 103 58 Z"/>
+    <path d="M118 153 L150 153 L152 159 L121 159 Z"/>
+  </g>
+  <path class="mark-star" fill="#FFFFFF" d="M100 22 Q101.6 32.4 110 34 Q101.6 35.6 100 46 Q98.4 35.6 90 34 Q98.4 32.4 100 22 Z"/>
+</svg>

@@ -64,7 +64,7 @@ Decided 16 Oct 2026 (brief 2.8):
 
 ## [CHECK]
 
-1. **Link not confirmed live.** `https://airtofficial.com/` (decisions.md 20 Oct 19:35 says the landing page was deployed to Vercel, but I haven't confirmed it loads). Check it opens before publishing. The YouTube link is resolved: the handle is @airt-official (Al, 20 Oct 2026), at `https://www.youtube.com/@airt-official`.
+1. **Links.** Resolved 20 Oct 2026: `https://airtofficial.com/` is live and redirects to `www.airtofficial.com` on Vercel. The YouTube link is resolved: the handle is @airt-official (Al, 20 Oct 2026), at `https://www.youtube.com/@airt-official`.
 2. **Do Gallery downloads stay?** decisions.md 18 Oct 21:09 ("creation is the key ... they shouldnt need to download my apps") left open whether the Gallery downloads, `check_build.py` and the Download Rules stay, shrink or go. I haven't seen a later decision. This page assumes the Gallery goes ahead, as decided on 20 Oct 19:51. If downloads shrink, the label page and steps above may change.
 3. **Search box.** Brief 3.6 describes the home page as "one card per artefact (ID, title, type, skill) and a search box". The ticket asks for ID, episode, one-line description and link, with no JavaScript. I followed the ticket and left the search box out, as it would need JavaScript. Add it later if wanted, or add title, type and skill columns.
 4. **CSP line.** Brief 3.6 says Gallery pages use the same CSP line as artefacts. That line (`default-src 'none'`, inline styles and data: images only) would block this page's own `css/style.css` and SVG files. I used a version that allows only this site's own files: `default-src 'none'; style-src 'self'; img-src 'self'; form-action 'none'; base-uri 'none'`. Confirm, or I can inline the CSS and images instead.
@@ -80,7 +80,7 @@ Decided 16 Oct 2026 (brief 2.8):
 - The artefacts list is a table-style grid on desktop (ID, Episode, What it is, Link) and stacks into labelled cards on phones. Empty for now, with a dashed "Coming soon" badge.
 - The commented example row in `index.html` shows a placeholder entry (A0001, E001, a dummy description and `A0001/` link). It is not visible on the page.
 - The page heading is the AiRT wordmark with "Official" and "Gallery" under it. (Until 20 Oct 2026 a small "AiRT Official" label sat above the mark; it was dropped in the rebrand.)
-- The sponsor footer uses the same line and logo Option A as the website. The logo isn't a link, as no BizWithAi.ai web address is in the files.
+- The sponsor footer uses the same line and logo Option A as the website: "Proudly supported by BizWithAi.ai", then "Your Ai solution solving partner" (21 Oct 2026). The logo isn't a link, as no BizWithAi.ai web address is in the files.
 - Episode 1 date Mon 23 Nov 2026 matches tracker.md ("Launch: E001 goes live").
 - Previews were taken with headless Google Chrome on the box over its DevTools protocol: 1440 px wide full page, and 390 px wide at 2x.
 
@@ -101,3 +101,7 @@ Two plain text links sit under the YouTube button and the airtofficial.com butto
 - Instagram: https://www.instagram.com/airt_official_page/ (shown as @airt_official_page)
 
 Source: Meta Business Suite, read by the Chief of Staff on 20 Oct 2026. No Meta logos or icons and no scripts; they are ordinary links (`rel="noopener"`, same tab, like the YouTube link), so the Content-Security-Policy is unaffected and nothing loads from another site. Styles are the `.social` rules in `css/style.css`. The earlier `index.html`, `css/style.css`, `README.md` and previews are in `done/` (suffix `-2026-10-20-nosocial`).
+
+## Sponsor wording, 21 Oct 2026
+
+Al's new sponsor wording (ticket `jobs/builder/2026-10-21-sponsor-wording.md`): the footer now reads "Proudly supported by BizWithAi.ai", with "Your Ai solution solving partner" on a second line (a `<br>` inside the same paragraph, so no CSS change). Previews in `previews/` re-taken. Not published: it waits for Al's approval of the preview. The earlier `index.html`, `README.md` and previews are in `done/` (suffix `-2026-10-21-pre-supported`).
